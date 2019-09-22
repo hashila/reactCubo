@@ -4,19 +4,30 @@ import Item from '../item/item'
 
 class Itemlist extends React.Component {
 
-  render(){
+  getItemList(){
     var oneBook = this.props.listArray.map(function(book){
       console.log("dwsdfafadfafaf");
       console.log(book);
       return (
+        <div className="onebook col-sm-2">
           <li><Item book={book}/></li>
+        </div>
       );
     });
-    console.log(this.props.listArray);
+    return oneBook;
+  }
+
+  render(){
+    var oneBook = this.getItemList();
+
+    console.log(oneBook);
     return (
-    <div className="items">
+    <div className="items container">
       <h1>list</h1>
-      <ul>{oneBook}</ul>
+      <div className="row">
+        <Item/>
+        <ul>{oneBook}</ul>
+      </div>
     </div>
   );
   }

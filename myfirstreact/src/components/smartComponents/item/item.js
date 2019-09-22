@@ -7,10 +7,13 @@ class Item extends React.Component {
     <div className="item">
 
       <div className="card">
-        <img src="..." className="card-img-top" alt="..."/>
+        <img src={this.props.book.thumb} className="card-img-top"/>
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk</p>
+        <h5 className="card-title">{this.props.book.title}</h5>
+        <p className="card-text">
+          <strong>By :</strong>{this.props.book.auther}
+          {this.props.book.pages}<strong>pages</strong>
+        </p>
         <button>Add to Read</button>
       </div>
     </div>
