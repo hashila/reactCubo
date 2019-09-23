@@ -1,0 +1,21 @@
+nav{
+  background-color: #b71540;
+  height: 100px;
+}
+.sinput{
+  background-color: #b71540;
+  color: white;
+}
+::placeholder {
+  color: white !important;
+}
+.navCon{
+  margin-left: 70vw;
+}
+.errorhide{
+  visibility: hidden;
+}
+.errorview{
+  visibility: visible;
+  color: yellow;
+}

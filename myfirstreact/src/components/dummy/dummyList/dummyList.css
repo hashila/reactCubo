@@ -1,0 +1,11 @@
+.cardItem{
+  background-color: #fa983a;
+  height: 320px;
+  width: 250px;
+  margin: 10px;
+  /* background-image: url('./hpsorcstone.jpg'); */
+
+}
+.addbtn{
+  margin-top: 50px;
+}
